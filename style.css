@@ -35,3 +35,6 @@ html[data-hl="en"] [data-lang="de"], html[data-hl="de"] [data-lang="en"] { displ
 .switch a { margin: 0; padding: 4px 10px; border-radius: 999px; font-size: 13px; font-weight: 700; color: var(--muted); text-decoration: none; }
 .switch a[aria-current="true"] { background: var(--brand); color: var(--on-brand); }
 nav { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; row-gap: 8px; }
+/* Card heading icons: one color per meaning, like the app. */
+.card h3 { display: flex; align-items: center; gap: 8px; }
+.ico { width: 20px; height: 20px; flex: none; color: var(--star); }
