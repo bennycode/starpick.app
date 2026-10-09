@@ -38,3 +38,5 @@ nav { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex
 /* Card heading icons: one color per meaning, like the app. */
 .card h3 { display: flex; align-items: center; gap: 8px; }
 .ico { width: 20px; height: 20px; flex: none; color: var(--star); }
+/* App screenshots in the cards: light or dark, matching the visitor's mode. */
+.shot img { display: block; width: 100%; max-width: 240px; height: auto; margin: 18px auto 0; border-radius: 28px; box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
