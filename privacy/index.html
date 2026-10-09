@@ -4,17 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy · Starpick</title>
+<meta name="title-en" content="Privacy Policy · Starpick">
+<meta name="title-de" content="Datenschutz · Starpick">
 <meta name="description" content="Starpick collects no data. Everything stays on your iPhone.">
 <link rel="icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/style.css">
+<script src="/lang.js"></script>
 </head>
 <body>
 <main>
 <header>
   <a class="brand" href="/"><img src="/icon.png" alt="">Starpick</a>
-  <nav><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav>
+  <nav>
+    <a href="/support/"><span data-lang="en">Support</span><span data-lang="de">Hilfe</span></a>
+    <a href="/privacy/"><span data-lang="en">Privacy</span><span data-lang="de">Datenschutz</span></a>
+    <span class="switch"><a data-switch="en" href="?hl=en">EN</a><a data-switch="de" href="?hl=de">DE</a></span>
+  </nav>
 </header>
+<div data-lang="en">
 <h1>Privacy Policy</h1>
 <p class="muted">Effective October 9, 2026</p>
 
@@ -40,7 +48,9 @@
 <h2>Contact</h2>
 <p>Benny Neugebauer, Germany. Questions about privacy: <a href="mailto:support@starpick.app">support@starpick.app</a>. If this policy ever changes, the new version and its date will be posted on this page.</p>
 
-<section class="lang" lang="de">
+</div>
+<div data-lang="de" lang="de">
+
 <h1>Datenschutzerklärung</h1>
 <p class="muted">Gültig ab 9. Oktober 2026</p>
 <p><strong>Starpick erhebt keine Daten.</strong> Die App hat kein Konto, keinen Server, keine Analyse, keine Werbung und kein Tracking. Nichts, was du in Starpick tust, wird an uns oder an andere übertragen.</p>
@@ -54,10 +64,13 @@
 <p>„Starpick bewerten“ öffnet den App Store, „Sprache“ öffnet die iPhone-Einstellungen. Dort gilt die Datenschutzerklärung von Apple.</p>
 <h2>Diese Website</h2>
 <p>starpick.app wird über GitHub Pages bereitgestellt. GitHub kann beim Besuch technische Daten wie deine IP-Adresse protokollieren, um den Dienst zu betreiben und zu schützen; siehe die <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>. Die Website setzt keine Cookies und nutzt keine Analyse.</p>
+<h2>Kinder</h2>
+<p>Starpick erhebt von niemandem Daten, auch nicht von Kindern.</p>
+
 <h2>Kontakt</h2>
 <p>Benny Neugebauer, Deutschland. Fragen zum Datenschutz: <a href="mailto:support@starpick.app">support@starpick.app</a>. Ändert sich diese Erklärung, steht die neue Fassung mit Datum auf dieser Seite.</p>
-</section>
-<footer>© 2026 Benny Neugebauer · <a href="/privacy/">Privacy</a> · <a href="/support/">Support</a></footer>
+</div>
+<footer>© 2026 Benny Neugebauer · <a href="/privacy/"><span data-lang="en">Privacy</span><span data-lang="de">Datenschutz</span></a> · <a href="/support/"><span data-lang="en">Support</span><span data-lang="de">Hilfe</span></a></footer>
 </main>
 </body>
 </html>

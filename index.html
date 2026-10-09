@@ -4,17 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Starpick: Swipe to your best photos</title>
+<meta name="title-en" content="Starpick: Swipe to your best photos">
+<meta name="title-de" content="Starpick: Swipe zu deinen besten Fotos">
 <meta name="description" content="Starpick turns sorting your camera roll into a quick swipe game. Give your photos stars and find your best shots. Everything stays on your iPhone.">
 <link rel="icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/style.css">
+<script src="/lang.js"></script>
 </head>
 <body>
 <main>
 <header>
   <a class="brand" href="/"><img src="/icon.png" alt="">Starpick</a>
-  <nav><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav>
+  <nav>
+    <a href="/support/"><span data-lang="en">Support</span><span data-lang="de">Hilfe</span></a>
+    <a href="/privacy/"><span data-lang="en">Privacy</span><span data-lang="de">Datenschutz</span></a>
+    <span class="switch"><a data-switch="en" href="?hl=en">EN</a><a data-switch="de" href="?hl=de">DE</a></span>
+  </nav>
 </header>
+<div data-lang="en">
 <section class="hero">
   <img src="/icon.png" alt="The Starpick app icon: a stack of photos with a golden star">
   <h1>Swipe to your best photos</h1>
@@ -27,11 +35,22 @@
   <div class="card"><h3>Decks for everything</h3><p>Start from an album, a month or your own pick. Every deck is sorted on its own.</p></div>
   <div class="card"><h3>Private by design</h3><p>No account, no cloud, no ads, no tracking. Your photos never leave your iPhone.</p></div>
 </section>
-<section class="lang" lang="de">
-  <h2>Swipe zu deinen besten Fotos</h2>
-  <p class="muted">Starpick macht das Sortieren deiner Mediathek zu einem schnellen Swipe-Spiel: Vergib Sterne, finde deine besten Bilder. Alles bleibt auf deinem iPhone, ohne Konto, ohne Cloud, ohne Tracking.</p>
+</div>
+<div data-lang="de" lang="de">
+<section class="hero">
+  <img src="/icon.png" alt="Das Starpick-Symbol: ein Stapel Fotos mit einem goldenen Stern">
+  <h1>Swipe zu deinen besten Fotos</h1>
+  <p class="lead">Tausende Fotos, aber die guten findest du nie? Starpick macht das Sortieren deiner Mediathek zu einem schnellen Swipe-Spiel.</p>
+  <a class="pill" href="/support/">Bald im App Store</a>
 </section>
-<footer>© 2026 Benny Neugebauer · <a href="/privacy/">Privacy</a> · <a href="/support/">Support</a></footer>
+<section class="cards">
+  <div class="card"><h3>★ Sterne vergeben</h3><p>Nach rechts swipen gibt einen Stern mehr, nach links einen weniger. Deine 3-Sterne-Fotos landen in Legendär.</p></div>
+  <div class="card"><h3>Spielend sortieren</h3><p>Dies oder das, Blitzrunde und Beste der Serie finden das beste Bild jeder Serie.</p></div>
+  <div class="card"><h3>Stapel für alles</h3><p>Starte mit einem Album, einem Monat oder deiner eigenen Auswahl. Jeder Stapel wird für sich sortiert.</p></div>
+  <div class="card"><h3>Privat von Anfang an</h3><p>Kein Konto, keine Cloud, keine Werbung, kein Tracking. Deine Fotos verlassen nie dein iPhone.</p></div>
+</section>
+</div>
+<footer>© 2026 Benny Neugebauer · <a href="/privacy/"><span data-lang="en">Privacy</span><span data-lang="de">Datenschutz</span></a> · <a href="/support/"><span data-lang="en">Support</span><span data-lang="de">Hilfe</span></a></footer>
 </main>
 </body>
 </html>

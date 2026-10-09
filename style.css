@@ -29,3 +29,9 @@ nav a { margin-left: 16px; font-weight: 600; text-decoration: none; color: var(-
 .card p { margin: 0; color: var(--muted); }
 .lang { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); }
 footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+/* Language: lang.js sets data-hl on <html>; the other language is hidden. */
+html[data-hl="en"] [data-lang="de"], html[data-hl="de"] [data-lang="en"] { display: none !important; }
+.switch { display: inline-flex; gap: 2px; margin-left: 16px; padding: 3px; border-radius: 999px; background: var(--card); }
+.switch a { margin: 0; padding: 4px 10px; border-radius: 999px; font-size: 13px; font-weight: 700; color: var(--muted); text-decoration: none; }
+.switch a[aria-current="true"] { background: var(--brand); color: var(--on-brand); }
+nav { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; row-gap: 8px; }
