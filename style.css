@@ -53,3 +53,9 @@ nav { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex
 }
 :root[data-theme="dark"] .theme .sun { display: block; }
 :root[data-theme="dark"] .theme .moon { display: none; }
+/* Hero feature list: a star per line, centered as a block, read left to right. */
+.features { display: table; margin: 20px auto 0; padding: 0; list-style: none; text-align: left; font-size: 18px; }
+.features li { position: relative; padding-left: 30px; margin: 8px 0; }
+.features li::before { content: ""; position: absolute; left: 0; top: 4px; width: 20px; height: 20px; background: var(--star);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z'/%3E%3C/svg%3E") center / contain no-repeat; }
